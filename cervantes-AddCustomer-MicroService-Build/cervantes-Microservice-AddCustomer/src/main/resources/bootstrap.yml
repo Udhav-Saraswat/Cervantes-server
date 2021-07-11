@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: cervantes-AddCustomer-Microservice
+    
+    
+management:
+   endpoints:
+     web:
+       exposure:
+         include:
+         - health  
+         

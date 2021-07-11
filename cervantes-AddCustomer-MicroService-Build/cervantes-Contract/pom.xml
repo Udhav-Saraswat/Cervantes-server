@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	
+	<!-- Custom Parent a Project Build -->
+	<parent>
+	<groupId>com.cervantes.addCustomer.MicroService.Build</groupId>
+	<artifactId>cervantes-AddCustomer-MicroService-Build</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+    </parent>
+    
+	<groupId>com.cervantes.contract</groupId>
+	<artifactId>cervantes-Contract</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>cervantesContract</name>
+	<description>contracts for cernavtes</description>
+	<properties>
+		<java.version>1.8</java.version>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+	<!-- Jackson Dependency -->
+	<dependency>
+		<groupId>com.fasterxml.jackson.core</groupId>
+		<artifactId>jackson-core</artifactId>
+	</dependency>
+
+	<dependency>
+		<groupId>com.fasterxml.jackson.core</groupId>
+		<artifactId>jackson-annotations</artifactId>
+	</dependency>
+
+	<!-- Swagger v2 -->
+	<dependency>
+		<groupId>io.springfox</groupId>
+		<artifactId>springfox-swagger2</artifactId>
+		<version>2.8.0</version>
+	</dependency>
+
+	<dependency>
+		<groupId>io.springfox</groupId>
+		<artifactId>springfox-swagger-ui</artifactId>
+		<version>3.0.0</version>
+	</dependency>
+
+	<dependency>
+		<groupId>io.swagger.core.v3</groupId>
+		<artifactId>swagger-annotations</artifactId>
+		<version>2.1.10</version>
+	</dependency>
+
+	<dependency>
+		<groupId>io.swagger.core.v3</groupId>
+		<artifactId>swagger-models</artifactId>
+		<version>2.1.10</version>
+	</dependency>
+
+	<dependency>
+		<groupId>io.swagger.core.v3</groupId>
+		<artifactId>swagger-core</artifactId>
+		<version>2.1.10</version>
+	</dependency>
+
+
+
+	<dependency>
+		<groupId>io.swagger</groupId>
+		<artifactId>swagger-annotations</artifactId>
+		<version>2.0.0-rc2</version>
+	</dependency>
+
+	<!-- Json Serialize Deserialize -->
+	<dependency>
+		<groupId>org.json</groupId>
+		<artifactId>json</artifactId>
+		<version>20210307</version>
+	</dependency>
+
+	<dependency>
+		<groupId>com.googlecode.json-simple</groupId>
+		<artifactId>json-simple</artifactId>
+		<version>1.1.1</version>
+	</dependency>
+		
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>

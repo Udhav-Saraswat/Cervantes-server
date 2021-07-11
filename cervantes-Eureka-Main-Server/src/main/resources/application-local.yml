@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: Cervantes-Eureka-Main-Server 
+    
+  
+  
+eureka:
+  client:
+    service-url:
+      deafaultZone: http://localhost:8761/CervantesEureka
+    register-with-eureka: false
+    fetch-registry: false
+      
+server:
+  port: 8761
+ 
