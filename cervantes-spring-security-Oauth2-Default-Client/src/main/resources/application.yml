@@ -15,6 +15,7 @@ security:
       accessTokenUri: http://localhost:8081/auth/oauth/token
       userAuthorizationUri: http://localhost:8081/auth/oauth/authorize
       registered-redirect-uri: abcd
+      scope: user_info
     resource:
       userInfoUri: http://localhost:8081/auth/Admin/principal
     
