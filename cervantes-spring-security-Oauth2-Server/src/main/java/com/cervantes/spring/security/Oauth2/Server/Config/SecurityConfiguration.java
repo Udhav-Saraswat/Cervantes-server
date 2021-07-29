@@ -12,12 +12,12 @@ import org.springframework.security.oauth2.config.annotation.web.configuration.E
 @Configuration
 @EnableResourceServer
 public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
-
-	@Value("udhav")
-	private String username;
-
-	@Value("saraswat")
-	private String password;
+//
+//	@Value("udhav")
+//	private String username;
+//
+//	@Value("saraswat")
+//	private String password;
 
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
@@ -35,13 +35,14 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 	@Override
 	protected void configure(AuthenticationManagerBuilder auth) throws Exception {
 		auth.inMemoryAuthentication()
-		.withUser(username)
-		.password(passwordEncoder().encode(password))
+		.withUser("udhav")
+		.password("saraswat")
+//		.password(passwordEncoder().encode("saraswat"))
 		.roles("USER");
 	}
 
-	@Bean
-	public BCryptPasswordEncoder passwordEncoder() {
-		return new BCryptPasswordEncoder();
-	}
+//	@Bean
+//	public BCryptPasswordEncoder passwordEncoder() {
+//		return new BCryptPasswordEncoder();
+//	}
 }

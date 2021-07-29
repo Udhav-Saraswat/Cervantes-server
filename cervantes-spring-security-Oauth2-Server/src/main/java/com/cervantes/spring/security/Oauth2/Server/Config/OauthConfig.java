@@ -15,11 +15,11 @@ import org.springframework.security.oauth2.config.annotation.web.configurers.Aut
 @EnableAuthorizationServer
 public class OauthConfig extends AuthorizationServerConfigurerAdapter {
 
-	private final PasswordEncoder passwordEncoder;
-	@Value("abcd")
-	private String ClientID;
-	@Value("xyz")
-	private String ClientSecret;
+//	private final PasswordEncoder passwordEncoder;
+//	@Value("abcd")
+//	private String ClientID;
+//	@Value("xyz")
+//	private String ClientSecret;
 	
 	/**
 	 * Off for now
@@ -31,9 +31,9 @@ public class OauthConfig extends AuthorizationServerConfigurerAdapter {
     @Autowired
     private AuthenticationManager authenticationManager;
     
-	public OauthConfig(PasswordEncoder passwordEncoder) {
-		this.passwordEncoder = passwordEncoder;
-	}
+//	public OauthConfig(PasswordEncoder passwordEncoder) {
+//		this.passwordEncoder = passwordEncoder;
+//	}
 
 	@Override
 	public void configure(
@@ -46,8 +46,9 @@ public class OauthConfig extends AuthorizationServerConfigurerAdapter {
 	@Override
 	public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
 		clients.inMemory()
-		.withClient(ClientID)
-		.secret(passwordEncoder.encode(ClientSecret))
+		.withClient("abcd")
+		.secret("xyz")
+//		.secret(passwordEncoder.encode(ClientSecret))
 		.authorizedGrantTypes("authorization_code")
 		.scopes("user_info")
 		.autoApprove(true);
