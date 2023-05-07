@@ -1,0 +1,17 @@
+{
+  "customerName" : {
+      "cutomerFirstName" : "Justin",
+      "customerMiddleName" : "renold",
+      "customerLastName" : "S"
+   },
+  "customerProfilePhotoLinkLocalPC" : "../linktopc",
+  "mobileNumber" : "123",
+  "streetAddress" : "abc",
+   "cafDetails" : {
+    "identityProofLinkLocalPC" : "link1",
+    "addressProofLinkLocalPC" : "link2",
+    "adharNumber" : "0000 2222 4444 6666"
+},
+   "city" : "AU",
+   "verificationStatus" : "VERIFIED"
+}

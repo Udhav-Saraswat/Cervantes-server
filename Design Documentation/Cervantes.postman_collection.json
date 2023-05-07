@@ -1,0 +1,89 @@
+{
+	"info": {
+		"_postman_id": "55df6ab7-86ef-4703-9783-c9b0d258721d",
+		"name": "Cervantes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ADDCustomer",
+			"item": [
+				{
+					"name": "AddCustomer Request 1",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "userProfilePhoto",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "userIdentityProof",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "userAddressProof",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "userProfilePhoto",
+									"type": "file",
+									"src": "/C:/Users/Udhav/Desktop/userphoto.JPG"
+								},
+								{
+									"key": "userIdentityProof",
+									"type": "file",
+									"src": "/C:/Users/Udhav/Desktop/userphoto.JPG"
+								},
+								{
+									"key": "userAddressProof",
+									"type": "file",
+									"src": "/C:/Users/Udhav/Desktop/userphoto.JPG"
+								},
+								{
+									"key": "AddCustomerAccount",
+									"value": "{\n  \"customerName\" : {\n      \"cutomerFirstName\" : \"Udhav\",\n      \"customerMiddleName\" : \"ok\",\n      \"customerLastName\" : \"ok\"\n   },\n  \"customerProfilePhotoLinkLocalPC\" : \"../linktodamnpc\",\n  \"mobileNumber\" : \"123\",\n  \"streetAddress\" : \"gandhinagar\",\n   \"cafDetails\" : {\n    \"identityProofLinkLocalPC\" : \"damnlink\",\n    \"addressProofLinkLocalPC\" : \"damnlink\",\n    \"adharNumber\" : \"0000 2222 4444 6666\"\n},\n   \"city\" : \"gzb\",\n   \"verificationStatus\" : \"VERIFIED\"\n}",
+									"type": "text"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7080/CustomerCervantesAPI/AddCustomer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7080",
+							"path": [
+								"CustomerCervantesAPI",
+								"AddCustomer"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
